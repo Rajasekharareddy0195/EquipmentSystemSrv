@@ -80,3 +80,8 @@ entity Issues: cuid, managed{
     equipment : Association to Equipments;
     issueStatus : Association to IssueStatus;
 }
+
+entity Sample{
+    key ID:UUID;
+    test:String;
+}
