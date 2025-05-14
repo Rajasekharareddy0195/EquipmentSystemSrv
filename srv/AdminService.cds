@@ -1,17 +1,5 @@
 using {Equipment.system.app as service} from '../db/DataModel';
 
-service EquipmentSystemSrv {
-
-    entity Equipments      as projection on service.Equipments;
-    entity EquipmentTypes  as projection on service.EquipmentTypes;
-    entity Locations       as projection on service.Locations;
-    entity EquipmentStatus as projection on service.EquipmentStatus;
-    entity issueStatus     as projection on service.IssueStatus;
-    entity TaskPriority    as projection on service.TaskPriority;
-    entity IssueSeverity   as projection on service.IssueSeverity;
-
-}
-
 
 service AdminService {
     entity Equipments      as projection on service.Equipments;
